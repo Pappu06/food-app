@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Recipe Finder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">🍽️ Foodie Finder</div>
+    <div class="search-area">
+      <input type="text" id="search" placeholder="Search recipes..." />
+      <select id="diet">
+        <option value="">All Diets</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+        <option value="gluten free">Gluten Free</option>
+      </select>
+      <select id="cuisine">
+        <option value="">All Cuisines</option>
+        <option value="Indian">Indian</option>
+        <option value="Italian">Italian</option>
+        <option value="Chinese">Chinese</option>
+        <option value="Mexican">Mexican</option>
+      </select>
+      <button onclick="searchRecipe()">Search</button>
+    </div>
+  </header>
+
+  <div id="loader" class="loader hidden"></div>
+
+  <main id="recipes-container"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>
